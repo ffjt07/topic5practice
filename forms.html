@@ -9,15 +9,56 @@
     <title>Basic Forms Exercise</title>
 </head>
 <body>
-   <label for="firstname">First Name:&nbsp;</label>
-   <input name="firstname" type="text" required placeholder="Enter first name here" title="First name required"
-   autocomplete="on" maxlength="30"><br>
-   <label for="lastname">Last Name: &nbsp;</label>
-   <input name="lastname" type="text" required placeholder="Enter last name here" title="Last name required"
-   autocomplete="on" maxlength="30"><br>
-   <label for="age">What is your age?&nbsp;</label>
-   <input name="age" type="number" min="13" max="115" required placeholder="Age" title="Must be 13 or older" 
-   maxlength="3"><br>
-   
+   <form id="5.3-exercise" name="5.3-exercise" method="post">
+      <label for="firstname">First Name:&nbsp;</label>
+      <input name="firstname" type="text" required placeholder="Enter first name here" title="First name required"
+      autocomplete="on" maxlength="30">
+      <br>
+      <label for="lastname">Last Name: &nbsp;</label>
+      <input name="lastname" type="text" required placeholder="Enter last name here" title="Last name required"
+      autocomplete="on" maxlength="30">
+      <br>
+      <label for="age">What is your age?&nbsp;</label>
+      <input name="age" type="number" min="13" max="115" required placeholder="Age" title="Must be 13 or older" 
+      maxlength="3">
+      <br>
+      <label for="comment">Enter Your Comment Here:&nbsp;</label>
+      <textarea name="comment" rows="5" cols="50" id="comment" placeholder="Enter text here"></textarea>
+      <br>
+      <p>What is your favorite color?</p><br>
+      <label>
+         <input type="radio" name="color" value="blue" id="color1">Blue
+      </label>
+      <br>
+      <label>
+         <input type="radio" name="color" value="red" id="color2">Red
+      </label>
+      <br>
+      <label>
+         <input type="radio" name="color" value="green" id="color3">Green
+      </label>
+      <br>
+      <br>
+      <p>What is your favorite season?</p>
+      <br>
+      <label>
+         <input type="checkbox" name="favseason" value="spring" id="season1">Spring
+      </label>
+      <br>
+      <label>
+         <input type="checkbox" name="favseason" value="summer" id="season2">Summer
+      </label>
+      <br>
+      <label>
+         <input type="checkbox" name="favseason" value="fall" id="season3">Fall
+      </label>
+      <br>
+      <label>
+         <input type="checkbox" name="favseason" value="winter" id="season4">Winter
+      </label>
+      <br>
+      <br>
+      <input type="submit" name="submit" id="submit" value="Submit">
+   </form>
 </body>
 </html>
